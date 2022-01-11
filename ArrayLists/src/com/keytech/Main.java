@@ -35,8 +35,8 @@ public class Main {
 		}
 		System.out.println("-------------");
 		System.out.println(employees.contains(new Employee(1234, "Alice", "Kamande")));
-		
-		
+		System.out.println("-------------");
+		System.out.println(employees.indexOf(new Employee(1234, "Alice", "Kamande")));
 		
 		
 	}
