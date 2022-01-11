@@ -15,6 +15,8 @@ public class Main {
 		employees.add(new Employee(12367, "Steve", "Jobs"));
 		
 		employees.forEach(employee->System.out.println(employee));
+		System.out.println("-------------");
+		System.out.println(employees.get(1));
 		
 	}
 
