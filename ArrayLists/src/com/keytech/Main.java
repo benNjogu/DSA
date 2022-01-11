@@ -33,6 +33,11 @@ public class Main {
 		for(Employee employee : employeeArray) {
 			System.out.println(employee);
 		}
+		System.out.println("-------------");
+		System.out.println(employees.contains(new Employee(1234, "Alice", "Kamande")));
+		
+		
+		
 		
 	}
 
