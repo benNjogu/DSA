@@ -17,7 +17,8 @@ public class Main {
 		employees.forEach(employee->System.out.println(employee));
 		System.out.println("-------------");
 		System.out.println(employees.get(1));
-		
+		System.out.println("-------------");
+		System.out.println(employees.isEmpty());
 	}
 
 }
