@@ -10,6 +10,9 @@ public class Main {
 		Employee steveJobs = new Employee(12367, "Steve", "Jobs");
 		
 		EmployeeLinkedList list = new EmployeeLinkedList();
+		
+		System.out.println(list.isEmpty());
+		
 		list.addToFront(steveJobs);
 		list.addToFront(aliceKamande);
 		list.addToFront(lenoxNjogu);
@@ -18,6 +21,10 @@ public class Main {
 		list.printList();
 		System.out.println(list.getSize());
 		System.out.println(list.isEmpty());
+		
+		list.removeFromFront();
+		System.out.println(list.getSize());
+		list.printList();
 		
 	}
 
