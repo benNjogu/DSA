@@ -17,6 +17,7 @@ public class Main {
 		
 		list.printList();
 		System.out.println(list.getSize());
+		System.out.println(list.isEmpty());
 		
 	}
 
