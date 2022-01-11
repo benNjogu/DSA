@@ -49,7 +49,7 @@ public class Main {
 
 	private static int getDigit(int position, int value, int radix) {
 
-		return value / (int) Math.pow(10, position) % radix;
+		return value / (int) Math.pow(radix, position) % radix;
 	}
 
 }
