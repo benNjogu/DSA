@@ -28,6 +28,11 @@ public class Main {
 		employees.add(3, new Employee(987, "John", "Doe"));
 		System.out.println("-------------");
 		employees.forEach(employee->System.out.println(employee));
+		System.out.println("-------------");
+		Employee[] employeeArray = employees.toArray(new Employee[employees.size()]);
+		for(Employee employee : employeeArray) {
+			System.out.println(employee);
+		}
 		
 	}
 
