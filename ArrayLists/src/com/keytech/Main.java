@@ -24,7 +24,10 @@ public class Main {
 		employees.forEach(employee->System.out.println(employee));
 		System.out.println("-------------");
 		System.out.println(employees.size());
-		
+		System.out.println("-------------");
+		employees.add(3, new Employee(987, "John", "Doe"));
+		System.out.println("-------------");
+		employees.forEach(employee->System.out.println(employee));
 		
 	}
 
