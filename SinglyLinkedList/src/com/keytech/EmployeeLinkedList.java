@@ -17,11 +17,7 @@ public class EmployeeLinkedList {
 	}
 	
 	public boolean isEmpty() {
-		if (head == null)
-			return true;
-		else {
-			return false;
-		}
+		return head == null;
 	}
 	
 	public void printList() {
