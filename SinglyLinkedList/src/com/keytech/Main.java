@@ -16,6 +16,7 @@ public class Main {
 		list.addToFront(jamesKamande);
 		
 		list.printList();
+		System.out.println(list.getSize());
 		
 	}
 

@@ -3,11 +3,17 @@ package com.keytech;
 public class EmployeeLinkedList {
 
 	private EmployeeNode head;
+	private int size;
 	
 	public void addToFront(Employee employee) {
 		EmployeeNode node = new EmployeeNode(employee);
 		node.setNext(head);
 		head = node;
+		size++;
+	}
+	
+	public int getSize() {
+		return size;
 	}
 	
 	public void printList() {
@@ -19,5 +25,6 @@ public class EmployeeLinkedList {
 			current = current.getNext();
 		}
 		System.out.print("NULL");
+		System.out.println();
 	}
 }
