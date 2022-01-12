@@ -109,7 +109,7 @@ public class EmployeeDoublyLinkedList {
 		
 		size++;
 		
-		return false;
+		return true;
 	}
 
 	public void printList() {
