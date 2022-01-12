@@ -22,6 +22,8 @@ public class Main {
 		//Adding at the end of the list
 		employees.add(bliGates);
 		
+		employees.removeFirst();
+		employees.removeLast();
 		Iterator iterator = employees.iterator();
 		System.out.print("HEAD ->");
 		while(iterator.hasNext()) {
