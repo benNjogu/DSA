@@ -21,6 +21,9 @@ public class Main {
 		list.removeFromFront();
 		list.printList();
 		System.out.println(list.getSize());
+		list.removeFromEnd();
+		list.printList();
+		System.out.println(list.getSize());
 		
 	}
 
