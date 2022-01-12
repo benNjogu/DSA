@@ -15,6 +15,9 @@ public class Main {
 		list.addToFront(aliceKamande);
 		list.addToFront(jamesKamande);
 		
+		Employee bliGates = new Employee(1221, "Bli", "Gates");
+		list.addToEnd(bliGates);
+		
 		list.printList();
 		System.out.println(list.getSize());
 		

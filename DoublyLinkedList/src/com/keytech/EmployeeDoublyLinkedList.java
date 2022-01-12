@@ -21,6 +21,19 @@ public class EmployeeDoublyLinkedList {
 		size++;
 	}
 	
+	public void addToEnd(Employee employee) {
+		EmployeeNode node = new EmployeeNode(employee);
+		if (tail == null) {
+			head = node;
+		}else {
+			tail.setNext(node);
+			node.setPrevious(tail);
+		}
+		
+		tail = node;
+		size++;
+	}
+	
 	public int getSize() {
 		return size;
 	}
