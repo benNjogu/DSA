@@ -24,6 +24,8 @@ public class Main {
 		System.out.println(queue.size());
 		System.out.println("--------------------------------------------");
 		System.out.println(queue.isEmpty());
+		System.out.println("--------------------------------------------");
+		System.out.println(queue.peek());
 		
 	}
 
