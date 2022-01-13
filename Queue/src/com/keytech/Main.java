@@ -16,6 +16,10 @@ public class Main {
 		queue.enqueue(steveJobs);
 		
 		queue.printQueue();
+		System.out.println("--------------------------------------------");
+		queue.dequeue();
+		queue.dequeue();
+		queue.printQueue();
 		
 	}
 
