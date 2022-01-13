@@ -26,6 +26,10 @@ public class Main {
 		System.out.println(queue.isEmpty());
 		System.out.println("--------------------------------------------");
 		System.out.println(queue.peek());
+		System.out.println("--------------------------------------------");
+		queue.dequeue();
+		queue.dequeue();
+		queue.printQueue();
 		
 	}
 
