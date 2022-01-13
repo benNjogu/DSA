@@ -29,6 +29,7 @@ public class Main {
 		System.out.println("--------------------------------------------");
 		queue.dequeue();
 		queue.dequeue();
+		queue.dequeue();
 		queue.printQueue();
 		
 	}
