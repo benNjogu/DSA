@@ -19,6 +19,7 @@ public class Main {
 		queue.dequeue();
 		queue.enqueue(aliceKamande);
 		queue.dequeue();
+		queue.enqueue(jamesKamande);
 		
 		queue.printQueue();
 		
