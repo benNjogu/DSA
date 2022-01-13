@@ -23,13 +23,17 @@ public class Main {
 			char c = lowerCase.charAt(i);
 			if (c >= 'a' && c <= 'z') {
 				stack.push(c);
-				queue.add(c);
+				queue.addLast(c);
 			}
 		}
 		
+		while(!stack.isEmpty()) {
+			if (!stack.pop().equals(queue.removeFirst())) {
+				return false;
+			}
+		}
 
-
-		return stack.pop().equals(queue.remove());
+		return true;
 	}
 	
 }
