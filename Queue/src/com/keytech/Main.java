@@ -20,6 +20,10 @@ public class Main {
 		queue.dequeue();
 		queue.dequeue();
 		queue.printQueue();
+		System.out.println("--------------------------------------------");
+		System.out.println(queue.size());
+		System.out.println("--------------------------------------------");
+		System.out.println(queue.isEmpty());
 		
 	}
 
