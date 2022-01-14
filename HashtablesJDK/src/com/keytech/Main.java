@@ -22,6 +22,8 @@ public class Main {
 		hTable.put("steve", steveJobs);
 		hTable.putIfAbsent("steve", elon);
 		
+		System.out.println(hTable.getOrDefault("njeri", aliceKamande));
+		System.out.println("---------------------------------------------");
 //		Iterator<Employee> iterator = hTable.values().iterator();
 //		while(iterator.hasNext()) {
 //			System.out.println(iterator.next());
