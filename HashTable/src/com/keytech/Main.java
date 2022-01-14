@@ -25,7 +25,7 @@ public class Main {
 		hTable.remove("alice");
 		hTable.printHashtable();
 		System.out.println("---------------------------------------------");
-		System.out.println("Retrieve key steve-> "+hTable.get("lemox"));
+		System.out.println("Retrieve key lenox-> "+hTable.get("lenox"));
 	}
 
 }
