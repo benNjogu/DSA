@@ -15,7 +15,10 @@ public class Main {
 		hTable.put("lenoxnj", lenoxNjogu);
 		hTable.put("stevej", steveJobs);
 		
-		hTable.printHashtable();
+//		hTable.printHashtable();
+		
+		System.out.println("Retrieve key steve-> "+hTable.get("stevej"));
+		
 	}
 
 }
