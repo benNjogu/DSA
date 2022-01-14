@@ -20,7 +20,7 @@ public class Main {
 		hTable.put("alice", aliceKamande);
 		hTable.put("lenox", lenoxNjogu);
 		hTable.put("steve", steveJobs);
-		hTable.put("steve", elon);
+		hTable.putIfAbsent("steve", elon);
 		
 //		Iterator<Employee> iterator = hTable.values().iterator();
 //		while(iterator.hasNext()) {
