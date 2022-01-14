@@ -10,12 +10,12 @@ public class Main {
 		Employee steveJobs = new Employee(12367, "Steve", "Jobs");
 		
 		SimpleHashTable hTable = new SimpleHashTable();
-		hTable.put("jameskama", jamesKamande);
-		hTable.put("alicekam", aliceKamande);
-		hTable.put("lenoxnj", lenoxNjogu);
-		hTable.put("stevej", steveJobs);
+		hTable.put("james", jamesKamande);
+		hTable.put("alice", aliceKamande);
+		hTable.put("lenox", lenoxNjogu);
+		hTable.put("steve", steveJobs);
 		
-//		hTable.printHashtable();
+		hTable.printHashtable();
 		
 		System.out.println("Retrieve key steve-> "+hTable.get("stevej"));
 		
