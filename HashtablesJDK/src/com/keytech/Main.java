@@ -20,18 +20,22 @@ public class Main {
 		hTable.put("lenox", lenoxNjogu);
 		hTable.put("steve", steveJobs);
 		
-		Iterator<Employee> iterator = hTable.values().iterator();
-		while(iterator.hasNext()) {
-			System.out.println(iterator.next());
-		}
+//		Iterator<Employee> iterator = hTable.values().iterator();
+//		while(iterator.hasNext()) {
+//			System.out.println(iterator.next());
+//		}
 		
+		
+		hTable.forEach((k,v) -> System.out.println("key = "+k+" value = "+v));
 		System.out.println("Retrieve key steve-> "+hTable.get("steve"));
 		System.out.println("---------------------------------------------------------");
 		hTable.remove("steve");
-		Iterator<Employee> iterator1 = hTable.values().iterator();
-		while(iterator1.hasNext()) {
-			System.out.println(iterator1.next());
-		}
+//		Iterator<Employee> iterator1 = hTable.values().iterator();
+//		while(iterator1.hasNext()) {
+//			System.out.println(iterator1.next());
+//		}
+
+		hTable.forEach((k,v) -> System.out.println("key = "+k+" value = "+v));
 		System.out.println("---------------------------------------------");
 //		hTable.remove("alice");
 //		hTable.printHashtable();
