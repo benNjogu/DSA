@@ -18,7 +18,14 @@ public class Main {
 		hTable.printHashtable();
 		
 		System.out.println("Retrieve key steve-> "+hTable.get("steve"));
-		
+		System.out.println("---------------------------------------------");
+		hTable.remove("steve");
+		hTable.printHashtable();
+		System.out.println("---------------------------------------------");
+		hTable.remove("alice");
+		hTable.printHashtable();
+		System.out.println("---------------------------------------------");
+		System.out.println("Retrieve key steve-> "+hTable.get("lemox"));
 	}
 
 }
