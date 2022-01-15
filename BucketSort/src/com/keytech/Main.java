@@ -23,7 +23,7 @@ public class Main {
 		List<Integer>[] buckets = new List[10];
 		
 		for(int i = 0; i < buckets.length; i++) {
-			buckets[i] = new ArrayList<Integer>();
+			buckets[i] = new LinkedList<Integer>();
 		}
 		
 		for(int i = 0; i < input.length; i++) {
