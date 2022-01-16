@@ -12,12 +12,6 @@ public class Tree {
 		}
 	}
 	
-	public void traverseInOrder() {
-		if (root != null) {
-			root.traverseInOrder();
-		}
-	}
-	
 	public int get(int value) {
 		if (root != null) {
 			return root.get(value);
@@ -25,4 +19,11 @@ public class Tree {
 		
 		return 0;
 	}
+	
+	public void traverseInOrder() {
+		if (root != null) {
+			root.traverseInOrder();
+		}
+	}
+	
 }
