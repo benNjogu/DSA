@@ -20,6 +20,30 @@ public class Tree {
 		return 0;
 	}
 	
+	public void delete(int value) {
+		root = delete(root, value);
+	}
+	
+	private TreeNode delete(TreeNode subtreeRoot, int value) {
+		if (subtreeRoot == null) {
+			return subtreeRoot;
+		}
+		if(value < subtreeRoot.getData()) {
+			subtreeRoot.setLeftChild(delete(subtreeRoot.getLeftChild(), value));
+		}else if(value > subtreeRoot.getData()) {
+			subtreeRoot.setRightChild(delete(subtreeRoot.getRightChild(), value));
+		}else {
+			//case where node is a leaf or it only has one child 
+			if (subtreeRoot.getLeftChild() == null) {
+				return subtreeRoot.getRightChild();
+			}else if (subtreeRoot.getRightChild() == null){
+				return subtreeRoot.getLeftChild();
+			}
+		}
+		
+		return subtreeRoot;
+	}
+
 	public int min() {
 		if (root == null) {
 			return Integer.MIN_VALUE;
