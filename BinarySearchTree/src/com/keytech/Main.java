@@ -16,6 +16,9 @@ public class Main {
 		intTree.insert(32);
 		
 		intTree.traverseInOrder();
+		System.out.println();
+		System.out.println(intTree.get(27));
+		System.out.println(intTree.get(13));
 	}
 
 }

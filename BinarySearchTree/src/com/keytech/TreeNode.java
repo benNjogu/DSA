@@ -30,6 +30,24 @@ public class TreeNode {
 		}
 	}
 
+	public int get(int value) {
+		if (value == data) {
+			return  this.data;
+		}
+		
+		if (value < data) {
+			if (leftChild != null) {
+				leftChild.get(value);
+			}
+		}else {
+			if (rightChild != null) {
+				return rightChild.get(value);
+			}
+		}
+		
+		return 0;
+	}
+	
 	public void traverseInOrder() {
 		if (leftChild != null) {
 			leftChild.traverseInOrder();
