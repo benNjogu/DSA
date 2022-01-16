@@ -48,6 +48,24 @@ public class TreeNode {
 		return 0;
 	}
 	
+	public int min() {
+		if (leftChild == null) {
+			return data;
+		}else {
+			return leftChild.min();
+		}
+		
+	}
+	
+	public int max() {
+		if (rightChild == null) {
+			return data;
+		}else {
+			return rightChild.max();
+		}
+		
+	}
+	
 	public void traverseInOrder() {
 		if (leftChild != null) {
 			leftChild.traverseInOrder();
