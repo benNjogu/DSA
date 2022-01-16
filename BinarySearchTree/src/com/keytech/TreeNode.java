@@ -6,6 +6,11 @@ public class TreeNode {
 	private TreeNode leftChild;
 	private TreeNode rightChild;
 	
+	public TreeNode(int data) {
+		super();
+		this.data = data;
+	}
+	
 	public void insert(int value) {
 		if (value == data) {
 			return;
@@ -34,11 +39,6 @@ public class TreeNode {
 		if (rightChild != null) {
 			rightChild.traverseInOrder();
 		}
-	}
-	
-	public TreeNode(int data) {
-		super();
-		this.data = data;
 	}
 
 	public int getData() {
