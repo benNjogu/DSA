@@ -17,12 +17,9 @@ public class Main {
 		
 		intTree.traverseInOrder();
 		System.out.println();
-		System.out.println(intTree.min());
-		System.out.println(intTree.max());
-		
-		intTree.delete(20);
-		intTree.delete(27);
-		intTree.traverseInOrder();
+		intTree.traversePreOrder();
+		System.out.println();
+		intTree.traversePostOrder();
 		System.out.println();
 	}
 
