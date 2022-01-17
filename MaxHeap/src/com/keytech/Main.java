@@ -15,8 +15,7 @@ public class Main {
 		heap.insert(67);
 		
 		heap.printHeap();
-		heap.delete(5);
-		heap.printHeap();
+		System.out.println(heap.peek());
 	}
 
 }
