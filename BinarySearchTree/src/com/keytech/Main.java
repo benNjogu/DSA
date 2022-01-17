@@ -19,6 +19,11 @@ public class Main {
 		System.out.println();
 		System.out.println(intTree.min());
 		System.out.println(intTree.max());
+		
+		intTree.delete(20);
+		intTree.delete(27);
+		intTree.traverseInOrder();
+		System.out.println();
 	}
 
 }
