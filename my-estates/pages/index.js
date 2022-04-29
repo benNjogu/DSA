@@ -40,7 +40,7 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
 
       <Banner
 
-        title1="Find, Buy &and; Own Your"
+        title1="Find, Buy & Own Your"
         title2="Dream Home"
         desc1="Explore Apartments, Villas, Homes"
         desc2="and more"
@@ -50,7 +50,10 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
         imageURL="https://bayut-production.s3.eu-central-1.amazonaws.com/image/110993385/6a070e8e1bae4f7d8c1429bc303d2008"
 
       />
-      {propertiesForSale.map((property) => <Property property={property} key={property.id} />)}
+
+      <Flex flexWrap="wrap">
+        {propertiesForSale.map((property) => <Property property={property} key={property.id} />)}
+      </Flex>
 
     </Box>
   )
